@@ -1,0 +1,160 @@
+
+body {
+    margin: 0px;
+
+    
+}
+.image-container{
+    background-image: url(travel-world.jpg);
+    background-size: cover;
+    background-position: absolute;
+}
+
+.dropdown-container {
+    height: fit-content;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #06254b;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #06254b;
+    box-shadow: 1px 1px 1px 1px rgb(142, 143, 145);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    background-color: #06254b;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #06254b;
+      color: white;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.triagle-one {
+    background: #44d3dd;
+    width: 70%;
+    height: 775px;
+    border-radius: 0 0 100% 0;
+    margin-top: 0px;
+    display: flex;
+  }
+
+.content {
+    margin-left: 10%;
+}
+.input-field {
+    padding: 14px 20px;
+}
+.icon {
+    padding: 10px;
+    background: #06254b;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+
+.button {
+  background-color: #06254b;
+  color: white;
+  padding: 15px 5px;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.logo {
+    color: white;
+    margin-top: 1%;
+    border: 2px solid #06254b;
+    width: fit-content;
+    font-family: Lucida Handwriting;
+}
+
+p {
+    font-family: Lucida Segoe UI; 
+    color: #06254b;
+}
+
+h1 {
+    font-family: Segoe UI;
+    text-transform: uppercase;
+    color: #06254b;
+}
+
+h2 {
+    font-family:Georgia;
+    color: #06254b;
+
+}
+
+.footer {
+    height: 50px;
+    background-color: #06254b;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-facebook {
+  background: #4634ad;
+  color: white;
+}
+
+.fa-twitter {
+  background: #007bb5;
+  color: white;
+}
+#social-logos {
+  height: 50px;
+  font-size: 40px;
+  width: 60px;
+  text-decoration: none;
+  margin-left: 50px;
+  text-align: center;
+  float: right;
+}
