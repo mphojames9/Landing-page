@@ -1,132 +1,68 @@
 
-body {
-    margin: 0px;
+* {box-sizing: border-box;}
 
-    
-}
-.image-container{
-    background-image: url(travel-world.jpg);
-    background-size: cover;
-    background-position: absolute;
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.dropdown-container {
-    height: fit-content;
-
+#navbar {
+  overflow: hidden;
+  background-color: #263350;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  margin: 0;
+  
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #06254b;
+
+.logo{
+  margin: 0px;
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+#navbar a:hover {
+  background-color: rgb(133, 171, 228);
+  color: black;
+}
+
+#navbar-right {
+  float: right;
+}
+
+#icons{
+  margin: 50px;
+}
+
+@media screen and (max-width: 380px) {
+  #navbar {
+    padding: 10px 5px !important;
   }
-  
-  li {
-    float: right;
-  }
-  
-  li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: #06254b;
-    box-shadow: 1px 1px 1px 1px rgb(142, 143, 145);
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    background-color: #06254b;
+  #navbar a {
+    float: none;
     display: block;
     text-align: left;
   }
-  
-  .dropdown-content a:hover {
-      background-color: #06254b;
-      color: white;
-    }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
+  #navbar-right {
+    float: none;
   }
-
-.triagle-one {
-    background: #44d3dd;
-    width: 70%;
-    height: 775px;
-    border-radius: 0 0 100% 0;
-    margin-top: 0px;
-    display: flex;
-  }
-
-.content {
-    margin-left: 10%;
-}
-.input-field {
-    padding: 14px 20px;
-}
-.icon {
-    padding: 10px;
-    background: #06254b;
-    color: white;
-    min-width: 50px;
-    text-align: center;
-  }
-
-.button {
-  background-color: #06254b;
-  color: white;
-  padding: 15px 5px;
-  border: none;
-  align-items: center;
-  cursor: pointer;
 }
 
-.btn:hover {
-  opacity: 1;
-}
-.logo {
-    color: white;
-    margin-top: 1%;
-    border: 2px solid #06254b;
-    width: fit-content;
-    font-family: Lucida Handwriting;
-}
 
-p {
-    font-family: Lucida Segoe UI; 
-    color: #06254b;
-}
-
-h1 {
-    font-family: Segoe UI;
-    text-transform: uppercase;
-    color: #06254b;
-}
-
-h2 {
-    font-family:Georgia;
-    color: #06254b;
-
-}
-
-.footer {
+.social-media {
     height: 50px;
     background-color: #06254b;
 }
@@ -157,4 +93,101 @@ h2 {
   margin-left: 50px;
   text-align: center;
   float: right;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 85%;
+  box-shadow: 8px 5px 9px 3px rgb(117, 109, 109);
+  
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(29, 26, 26);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  box-shadow: 8px 10px 20px 10px rgb(204, 195, 195);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(141, 133, 133, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  margin-bottom: 20px;
+  box-shadow: 8px 5px 9px 3px rgb(117, 109, 109);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }

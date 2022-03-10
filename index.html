@@ -7,46 +7,136 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div class="image-container">
-  <div class="dropdown-container">
-    <ul>
-      <li><a href="#"><i class="fa fa-laptop icon"></i>Register</a></li>
-      <li><a href="#"><i class="fa fa-user login icon"></i>Login</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-bus icon"></i>Services</a>
-        <div class="dropdown-content">
-          <a href="#">Accomodation</a>
-          <a href="#">Travel risk management</a>
-          <a href="#">Sourcing</a>
-        </div>
-      </li>
-    </ul>
-    </div>
-  <div class="triagle-one">
-    <div class="content">
-      <div class="logo"><i class="fa fa-plane icon"></i>Matli travel agency<i class="fa fa-train icon"></i></div>
-      <h1>We are the best travel agency is SA</h1>
-      <h2>
-        CITIES & TERRITORIES / ENERGY & TRANSPORT / NEWS / TERRITORIES / TRANSPORTATION AND MOBILITY /
-        Traveling Today and Tomorrow: Cities and Countries With More Travelers</h2>
-      <p>Many come seeking the expert advice of a travel advisor. Here’s a sampling of the inquiries:</p><br/>
-       <p> “Where can I go without self-quarantine?”</p>
-       <p> “I need to get out of here, where can I go?”</p>
-       <p>“I’ve never used a travel agent before…”</p>
-       <p> “I NEED a travel agent.”</p>
-
-        <div class="input-container">
-          <input class="input-field" type="email" placeholder="email address" name="email">
-        <button type="submit" class="button">Subscribe to our news letter</button></div>
+  <div id="navbar">
+    <a href="#default" id="logo"><img src="images/logo.jpg" style="width:80%"></a>
+    <div id="navbar-right">
+      <a href="#register"><a href="#" id="icons"class="fa fa-lock">  Login  </a>
+      <a href="#login"><a href="#" id="icons"class="fa fa-laptop">  Register  </a>
+      <a href="#about"><a href="#" id="icons"class="fa fa-phone">  Contact-us  </a>
     </div>
   </div>
-</div>
-  <div class="footer">
-
+  
+  <div style="margin-top:210px;padding:15px 15px 250px;font-size:30px">
+    <p><b>This example demonstrates how to shrink a navigation bar when the user starts to scroll the page.</b></p>
+    <p>Scroll down this frame to see the effect!</p>
+    <img scr="logo.jpg">
+    <p>Scroll to the top to remove the effect.</p>
+    <p><b>Note:</b> We have also made the navbar responsive, resize the browser window to see the effect.</p>
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="social-media">
     <a href="#" id="social-logos"class="fa fa-linkedin"></a>
     <a href="#" id="social-logos"class="fa fa-pinterest"></a>
     <a href="#" id="social-logos"class="fa fa-facebook"></a>
     <a href="#" id="social-logos"class="fa fa-twitter"></a>
   </div>
+  <div class="main-menu"> 
+  <h2 style="text-align:center">Slideshow Gallery</h2>
+  
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">Giraffes in Kruger National Park at sunset</div>
+      <img src="images/knp.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">Aloes blooming at the Garden Route National Park</div>
+      <img src="images/south-africa-top-attractions-the-garden-route.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">Durban's Golden Mile, KwaZulu-Natal</div>
+      <img src="images/south-africa-durban-waterfront.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">Singita Boulders Lodge</div>
+      <img src="images/south-africa-top-luxury-lodges-singita-boulders-lodge.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">Clifton Beaches</div>
+      <img src="images/south-africa-cape-town-top-beaches-clifton-beaches.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">Beyond Ngala Safari Lodge</div>
+      <img src="images/south-africa-top-luxury-lodges-andbeyond-ngala-safari-lodge.jpg" style="width:100%">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="images/knp.jpg" style="width:100%" onclick="currentSlide(1)" alt="Giraffes in Kruger National Park at sunset">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/south-africa-top-attractions-the-garden-route.jpg" style="width:100%" onclick="currentSlide(2)" alt="Aloes blooming at the Garden Route National Park">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/south-africa-durban-waterfront.jpg" style="width:100%" onclick="currentSlide(3)" alt="Durban's Golden Mile, KwaZulu-Natal">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/south-africa-top-luxury-lodges-singita-boulders-lodge.jpg" style="width:100%" onclick="currentSlide(4)" alt="Singita Boulders Lodge">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/south-africa-cape-town-top-beaches-clifton-beaches.jpg" style="width:100%" onclick="currentSlide(5)" alt="Made up of four absolutely gorgeous white-sand beaches backed by smooth granite boulders known as the Twelve Apostles, the beaches at Clifton are Cape Town's most tony and trendy. Some of the city's most expensive real estate overlooks these beaches, which are accessed by steep sets of stairs from the main road about six kilometers from the city center. Each is set in its own cove and protected from wind by giant boulders, making them ideal for sun-bathing.">
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="images/south-africa-top-luxury-lodges-andbeyond-ngala-safari-lodge.jpg" style="width:100%" onclick="currentSlide(6)" alt="Beyond Ngala Safari Lodge">
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
 </body>
 </html>
+<script>
+  /*slide show script*/
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+   /*end of slide show script*/
+   // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "5px 2px";
+  } else {
+    document.getElementById("navbar").style.padding = "50px 10px";
+
+  }
+}
+
+  </script>
