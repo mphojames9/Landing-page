@@ -1,192 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, user-scalable=no">
- <title>Landing page</title>
- <link rel="stylesheet" href="style.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Landing Page</title>
 </head>
 <body>
-  <div id="navbar">
-    <a href="#default" id="logo"><img src="images/logo.jpg" style="width:80%"></a>
-    <div id="navbar-right">
-      <a href="#register"><a href="#" id="icons"class="fa fa-lock">  Login  </a>
-      <a href="#login"><a href="#" id="icons"class="fa fa-laptop">  Register  </a>
-      <a href="#about"><a href="#" id="icons"class="fa fa-phone">  Contact-us  </a>
-    </div>
-  </div>
-  <div class="organizer">
-    <div class="center">
-  <div style="margin-top:210px;padding:15px 15px 50px;font-size:30px">
-
-    <div class="main-menu-header"> <h2>Do Tourism Sustainably</h2>
-    <p>This year, South African Tourism approaches Tourism Month under the lens of the I Do Tourism campaign, which seeks to make tourism everyone’s business.</p>
-    </div>
-
-    <div class="row">
-      <div class="left" style="background-image:linear-gradient(rgb(55, 55, 129),rgba(109, 109, 184, 0.507),rgb(66, 66, 138));">
-        <h2>Menu</h2>
-        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-        <ul id="myMenu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Accomodation</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">About-us</a></li>
-          <li><a href="#">Terms and conditions</a></li>
-          <li><a href="#">Disclimer</a></li>
-          <li><a href="#">Privacy policy</a></li>
-        </ul>
+    <div id="navbar">
+        <a href="#default" id="logo"><img src="images/logo.jpg" style="width:80%"></a>
+        <div id="navbar-right">
+          <a href="#register"><a href="#" id="icons" class="fa fa-lock"><p>Login</p></a>
+          <a href="#login"><a href="#" id="icons" class="fa fa-laptop"><p>Register</p></a>
+          <a href="#about"><a href="#" id="icons" class="fa fa-phone"><p>Contact-us</p></a>
+        </div>
       </div>
-      
-      <div class="right" style="background-image:url(images/pexels-matthew-johnson-5851949.jpg)">
-      <button>Explore more</button>
-      </div>
-    </div>
+
+      <div class="organizer">
+        <div class="center">
+        <div class="main-menu-header"> <h2>Do Tourism Sustainably</h2>
+        <p>This year, South African Tourism approaches Tourism Month under the lens of the I Do Tourism campaign, which seeks to make tourism everyone’s business.</p>
+        </div>
     
-</div>
-</div>
-  <div class="social-media">
-    <a href="#" id="social-logos"class="fa fa-linkedin"></a>
-    <a href="#" id="social-logos"class="fa fa-pinterest"></a>
-    <a href="#" id="social-logos"class="fa fa-facebook"></a>
-    <a href="#" id="social-logos"class="fa fa-twitter"></a>
-  </div>
+        <div class="row">
+            <h2>Menu</h2>
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+            <ul id="myMenu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Accomodation</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About-us</a></li>
+              <li><a href="#">Terms and conditions</a></li>
+              <li><a href="#">Disclimer</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+        
+          <div class="main-menu">
+            <div class="mySlidesCenter">
+                <div class="textcontainer"><h2 style="text-align:center">Today’s travel deals</h2></div>
+            <div class="container">
+              <div class="mySlides">
+                <div class="numbertext">Giraffes in Kruger National Park at sunset</div>
+                <img src="images/knp.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">Aloes blooming at the Garden Route National Park</div>
+                <img src="images/south-africa-top-attractions-the-garden-route.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">Durban's Golden Mile, KwaZulu-Natal</div>
+                <img src="images/south-africa-durban-waterfront.jpg" style="width:100%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">Singita Boulders Lodge</div>
+                <img src="images/south-africa-top-luxury-lodges-singita-boulders-lodge.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">Clifton Beaches</div>
+                <img src="images/south-africa-cape-town-top-beaches-clifton-beaches.jpg" style="width:100%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">Beyond Ngala Safari Lodge</div>
+                <img src="images/south-africa-top-luxury-lodges-andbeyond-ngala-safari-lodge.jpg" style="width:100%">
+              </div>
+                
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+              </div>
+            </div>
 
-  
-  
-  <div class="main-menu"> 
-  <div class="organizer">
-    <div class="center">
-      <div class="textcontainer"><h2 style="text-align:center">Today’s travel deals</h2></div>
-  <div class="container">
-    <div class="mySlides">
-      <div class="numbertext">Giraffes in Kruger National Park at sunset</div>
-      <img src="images/knp.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">Aloes blooming at the Garden Route National Park</div>
-      <img src="images/south-africa-top-attractions-the-garden-route.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">Durban's Golden Mile, KwaZulu-Natal</div>
-      <img src="images/south-africa-durban-waterfront.jpg" style="width:100%">
-    </div>
-      
-    <div class="mySlides">
-      <div class="numbertext">Singita Boulders Lodge</div>
-      <img src="images/south-africa-top-luxury-lodges-singita-boulders-lodge.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">Clifton Beaches</div>
-      <img src="images/south-africa-cape-town-top-beaches-clifton-beaches.jpg" style="width:100%">
-    </div>
-      
-    <div class="mySlides">
-      <div class="numbertext">Beyond Ngala Safari Lodge</div>
-      <img src="images/south-africa-top-luxury-lodges-andbeyond-ngala-safari-lodge.jpg" style="width:100%">
-    </div>
-      
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="images/knp.jpg" style="width:100%" onclick="currentSlide(1)" alt="Plan your Kruger National Park safari trip from our recommended safari tour options, which range from exclusive private safaris to affordable group safaris. Take a journey of exploration to find Africa's Big Five : Elephant, Lion, Rhino, Leopard and Buffalo, you will discover unique wildlife on a real Kruger National Park safari in Africa.">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="images/south-africa-top-attractions-the-garden-route.jpg" style="width:100%" onclick="currentSlide(2)" alt="Scenic coastline with flowering aloe, Garden Route National Park, South Africa">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="images/south-africa-durban-waterfront.jpg" style="width:100%" onclick="currentSlide(3)" alt="Durban's famous Golden Mile attracts people from all over South Africa and beyond with the promise of year-round warm waters, pristine white sandy beaches and clear blue skies for their dream holiday. ">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="images/south-africa-top-luxury-lodges-singita-boulders-lodge.jpg" style="width:100%" onclick="currentSlide(4)" alt="Singita Boulders Safari Lodge accommodates guests in 10 luxurious suites and 2 family suites, with an en-suite bathroom and private open-air shower. Each room has a double-sided fireplace, air-conditioning, private swimming pool and outdoor leisure deck overlooking the Sand Rivere">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="images/south-africa-cape-town-top-beaches-clifton-beaches.jpg" style="width:100%" onclick="currentSlide(5)" alt="Made up of four absolutely gorgeous white-sand beaches backed by smooth granite boulders known as the Twelve Apostles, the beaches at Clifton are Cape Town's most tony and trendy. Some of the city's most expensive real estate overlooks these beaches, which are accessed by steep sets of stairs from the main road about six kilometers from the city center. Each is set in its own cove and protected from wind by giant boulders, making them ideal for sun-bathing.">
-      </div>    
-      <div class="column">
-        <img class="demo cursor" src="images/south-africa-top-luxury-lodges-andbeyond-ngala-safari-lodge.jpg" style="width:100%" onclick="currentSlide(6)" alt="The magic of Africa comes alive in the elegant &BEYOND Ngala Safari Lodge, a timeless safari lodge ideally positioned on a private concession inside the highly acclaimed Kruger National Park.">
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>  <div class="footer">
-    <a href="#" id="payment-logos"class="fa fa-credit-card"></a>
-    <a href="#" id="payment-logos"class="fa fa-cc-visa"></a>
-    <a href="#" id="payment-logos"class="fa fa-cc-paypal"></a>
-    <a href="#" id="payment-logos"class="fa fa-cc-discover"></a>
-  </div>
-  </div>
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+
+            <div class="row-2">
+              <div class="column">
+                <img class="demo cursor" src="images/knp.jpg" style="width:100%" onclick="currentSlide(1)" alt="Plan your Kruger National Park safari trip from our recommended safari tour options, which range from exclusive private safaris to affordable group safaris. Take a journey of exploration to find Africa's Big Five : Elephant, Lion, Rhino, Leopard and Buffalo, you will discover unique wildlife on a real Kruger National Park safari in Africa.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/south-africa-top-attractions-the-garden-route.jpg" style="width:100%" onclick="currentSlide(2)" alt="Scenic coastline with flowering aloe, Garden Route National Park, South Africa">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/south-africa-durban-waterfront.jpg" style="width:100%" onclick="currentSlide(3)" alt="Durban's famous Golden Mile attracts people from all over South Africa and beyond with the promise of year-round warm waters, pristine white sandy beaches and clear blue skies for their dream holiday. ">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/south-africa-top-luxury-lodges-singita-boulders-lodge.jpg" style="width:100%" onclick="currentSlide(4)" alt="Singita Boulders Safari Lodge accommodates guests in 10 luxurious suites and 2 family suites, with an en-suite bathroom and private open-air shower. Each room has a double-sided fireplace, air-conditioning, private swimming pool and outdoor leisure deck overlooking the Sand Rivere">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/south-africa-cape-town-top-beaches-clifton-beaches.jpg" style="width:100%" onclick="currentSlide(5)" alt="Made up of four absolutely gorgeous white-sand beaches backed by smooth granite boulders known as the Twelve Apostles, the beaches at Clifton are Cape Town's most tony and trendy. Some of the city's most expensive real estate overlooks these beaches, which are accessed by steep sets of stairs from the main road about six kilometers from the city center. Each is set in its own cove and protected from wind by giant boulders, making them ideal for sun-bathing.">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="images/south-africa-top-luxury-lodges-andbeyond-ngala-safari-lodge.jpg" style="width:100%" onclick="currentSlide(6)" alt="The magic of Africa comes alive in the elegant &BEYOND Ngala Safari Lodge, a timeless safari lodge ideally positioned on a private concession inside the highly acclaimed Kruger National Park.">
+              </div>
+            </div>
+            <div class="footer">
+              <div class="logos">
+              <a href="#" id="payment-logos"class="fa fa-credit-card"></a>
+              <a href="#" id="payment-logos"class="fa fa-cc-visa"></a>
+              <a href="#" id="payment-logos"class="fa fa-cc-paypal"></a>
+              <a href="#" id="payment-logos"class="fa fa-cc-discover"></a>
+            </div>
+          </div>
+ 
 </body>
 </html>
-<script>
-  /*slide show script*/
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }
-   /*end of slide show script*/
-   // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "5px 2px";
-  } else {
-    document.getElementById("navbar").style.padding = "50px 10px";
-
-  }
-}
-
-function myFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myMenu");
-  li = ul.getElementsByTagName("li");
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-
-  </script>
+<script src="index.js"></script>
